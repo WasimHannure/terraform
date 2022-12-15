@@ -1,3 +1,19 @@
+terraform {
+  cloud {
+    organization = "fortunecloudpune"
+    hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
+
+    workspaces {
+      tags = ["ws-7u7Thb1GAfvez836", "source:cli"]
+    }
+  }
+}
+
+
+
+
+
+
 provider "aws" {
   region="ap-south-1"
 }
