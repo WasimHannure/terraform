@@ -16,6 +16,8 @@ terraform {
 
 provider "aws" {
   region="ap-south-1"
+  access_key = "AKIA6KQIZW2B77NVI74E"
+  secret_key = "55jLjuXaUWC7Wb+DKQtdEjcMLp5El4DvI6jo1ppd"
 }
 resource "aws_launch_configuration" "example" {
   image_id        = "ami-079b5e5b3971bd10d"
