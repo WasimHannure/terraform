@@ -86,7 +86,7 @@ resource "aws_lb_listener" "http" {
   }
 }
 resource "aws_security_group" "alb" {
-  name = "terraform-example-alb"  # Allow inbound HTTP requests
+  name = "terraform-example-alb1"  # Allow inbound HTTP requests
   ingress {
     from_port   = 80
     to_port     = 80
@@ -142,7 +142,7 @@ output "alb_dns_name" {
 }
 
 resource "aws_security_group" "instance" {
-  name = "terraform-albec2-instance"  
+  name = "terraform-albec2-instance1"  
 ingress {
     from_port   = var.server_port
     to_port     = var.server_port
